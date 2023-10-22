@@ -1,6 +1,5 @@
+# use this code and add you python commands in the "button_callback*" functions
 import customtkinter
-
-
 class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
@@ -26,7 +25,7 @@ class App(customtkinter.CTk):
         self.button.grid(padx=20, pady=20, row=1, column=1)
 
         self.button = customtkinter.CTkButton(
-            self, text="my button", command=self.button_callbck4, height=50)
+            self, text="my button", command=self.button_callbck5, height=50)
         self.button.grid(padx=20, pady=20, row=1, column=2)
 
     def button_callbck0(self):
@@ -44,6 +43,8 @@ class App(customtkinter.CTk):
     def button_callbck4(self):
         print("button clicked")
 
+    def button_callbck5(self):
+        print("button clicked")
 
 app = App()
 app.mainloop()
